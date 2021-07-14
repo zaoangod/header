@@ -82,6 +82,12 @@ class Header {
      * @private
      */
     this._element = this.getTag();
+
+    /**
+     * block read only
+     * @type {boolean}
+     */
+    this._element.contentEditable = !data.readOnly;
   }
 
   /**
